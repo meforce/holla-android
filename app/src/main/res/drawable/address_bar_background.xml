@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_focused="false" >
+        <shape>
+            <solid android:color="@color/white"/>
+            <corners android:radius="1dp"/>
+            <stroke
+                android:width="0dp"
+                android:color="?attr/haloColor" >
+            </stroke>
+        </shape>
+    </item>
+
+    <item android:state_focused="true" >
+        <shape>
+            <solid android:color="@color/white"/>
+            <corners android:radius="1dp"/>
+            <stroke
+                android:width="0dp"
+                android:color="?attr/haloColor" >
+            </stroke>
+        </shape>
+    </item>
+
+</selector>

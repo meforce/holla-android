@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/scripts">
+
+        <Preference
+            android:title="@string/scripts_store"
+            android:summary="@string/force_zoom_summary"
+            android:key="scripts_store"
+            app:icon="@drawable/ic_script_oval">
+
+            <intent
+
+                android:action="android.intent.action.VIEW"
+                android:data="https://styx-browser.de/">
+
+                <extra
+                    android:name="SOURCE"
+                    android:value="SELF" />
+
+            </intent>
+
+        </Preference>
+
+        <Preference
+
+            android:title="@string/remove_userscript"
+            android:key="remove_userscript"
+            app:icon="@drawable/ic_action_delete_oval" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

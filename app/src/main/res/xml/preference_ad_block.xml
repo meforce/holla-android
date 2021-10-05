@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/settings_mining">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="block_mining_sites"
+        android:title="@string/block_mining"
+        app:icon="@drawable/ic_mining_oval" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_adblock">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="cb_block_ads"
+            android:summary="@string/recommended"
+            android:title="@string/block_ads"
+            app:icon="@drawable/ic_block_oval" />
+
+        <Preference
+            android:key="@string/pref_key_blocklist_auto_update"
+            android:title="@string/ad_block_update_mode"
+            app:icon="@drawable/ic_action_refresh_oval" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

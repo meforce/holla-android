@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginEnd="5dp"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:paddingBottom="4dp">
+
+        <ImageButton
+            android:id="@+id/button_reload"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/action_reload"
+            android:nextFocusDown="@id/web_view"
+            app:srcCompat="@drawable/ic_action_refresh"
+            app:tooltipText="@{@string/action_reload}" />
+
+        <include
+            android:id="@+id/address_bar_include"
+            layout="@layout/search" />
+
+
+        <ImageButton
+            android:id="@+id/button_more"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-48dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/action_more"
+            android:nextFocusDown="@id/web_view"
+            app:srcCompat="@drawable/ic_more_vertical"
+            app:tooltipText="@{@string/action_more}" />
+
+        <ImageButton
+            android:id="@+id/button_action_back"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/action_back"
+            app:srcCompat="@drawable/ic_action_back"
+            app:tooltipText="@{@string/action_back}"
+            tools:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/button_action_forward"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/action_forward"
+            app:srcCompat="@drawable/ic_action_forward"
+            app:tooltipText="@{@string/action_forward}"
+            tools:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/home_button"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home"
+            android:nextFocusDown="@id/web_view"
+            app:srcCompat="@drawable/ic_action_home"
+            app:tooltipText="@{@string/home}"
+            tools:visibility="invisible" />
+
+
+        <com.hollabrowser.meforce.icon.TabCountView
+            android:id="@+id/tabs_button"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/tabs"
+            android:nextFocusDown="@id/web_view"
+            app:tabIconBorderRadius="3dp"
+            app:tabIconBorderWidth="2dp"
+            app:tabIconColor="?attr/colorControlNormal"
+            app:tabIconTextSize="10dp"
+            app:tooltipText="@{@string/tabs}"
+            tools:visibility="invisible" />
+
+    </LinearLayout>
+
+</layout>
