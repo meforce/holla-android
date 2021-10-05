@@ -41,7 +41,7 @@ These settings can be customized as desired.
 
 Download `.apk` File [Releases Page](https://github.com/meforce/holla-android/releases/latest).
 
-<a href="https://github.com/meforce/holla-android/releases/download/1.0.0/Holla_1.0.0-release.apk"> 
+<a href="https://github.com/meforce/holla-android/releases/download/v1.0.0/Holla_1.0.0-release.apk"> 
 <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/meforce/holla-android?color=blue&label=CLICK-DOWNLOAD-APK-EXE&logo=android&logoColor=white&style=for-the-badge"></a>
 
 ### Google Play
